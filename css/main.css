@@ -1,0 +1,362 @@
+@charset "utf-8";
+section > h2{display: none;}
+#mslide{
+  width: 100%; height: 95vh;
+  position: relative;
+  overflow: hidden;
+}
+#mslide > div{
+  width: 100%;
+  position: absolute;
+}
+#mslide > div img{
+  width: 100%;
+}
+.slide1{
+  z-index: 3;
+}
+.slide2{
+  z-index: 2;
+}
+.slide3{
+  z-index: 1;
+}
+.sns{
+  position: absolute;
+  left: 3%; bottom: 30vh;
+  z-index: 100;
+}
+.sns i{
+  font-size: 1.25rem;
+  color: var(--txt_color1);
+  padding: 6px 8px;
+  border: 1px solid var(--txt_color1);
+  transition: 0.3s;
+}
+.sns a:hover i{
+  background: var(--txt_color1);
+  color: var(--main_color);
+}
+.l_btn, .r_btn{
+  position: absolute;
+  bottom: 20vh;
+  z-index: 100;
+  background: var(--txt_color1);
+  padding: 6px;
+}
+.l_btn{left: 3.5%;}
+.r_btn{left: 6.5%;}
+
+.c_btn{
+  position: absolute;
+  right: 3%; top: 47%;
+  z-index: 100;
+  cursor: pointer;
+}
+.c_btn > li{
+  width: 14px; height: 14px;  
+  border-radius: 50%;
+  background: var(--txt_color1);
+  margin-bottom: 10px;
+}
+.act{
+  background: var(--main_color) !important;
+}
+
+/* 2. news콘텐츠 */
+#news{
+  width: 100%; height: 500px;
+  padding: 100px 0px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#news > article:first-of-type{width:640px; margin: 15px;}
+#news > article:first-of-type img{width:280px;}
+#news > article:last-child{width:475px; height: 500px; margin: 15px;}
+#news > article:last-child > ul > li{
+  width: 350px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#news > article:last-child > ul > li > a{
+  line-height: 30px;
+  color: #777 !important;
+}
+#news > article h3{
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#news > article h3 span{
+  font-size: 18px;
+}
+#news i{
+  color:var(--main_color);
+  margin-right: 5px;
+}
+
+/* 3. 탭콘텐츠 */
+#tab_con{
+  background: #f1f1f1;
+}
+#tab_con h3{
+  font-size: 32px;
+  padding: 10px 0px;
+  font-weight: 500;
+}
+#tab_con > article{
+  width: 1200px; height: 500px;
+  padding: 100px 0px;
+  margin: 0px auto;
+  background-image: url(../images/mcon2_7.png);
+  background-repeat: no-repeat;
+  background-position: 600px 150px;
+  background-size: 550px;
+}
+#tab_con ul{
+  width: 650px;
+  display: flex;
+  position: relative;
+  margin-top: 30px;
+}
+#tab_con ul li{margin-right: 10px;}
+#tab_con ul li a{
+  background: #222;
+  border: 1px solid #222;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 10px;
+}
+#tab_con ul li a:hover{
+  text-decoration: none;
+}
+.tab_act{
+  background: var(--main_color) !important;
+  border: 1px solid #CCCCCC !important;
+}
+
+.fa-caret-down{display: none;}
+.con{
+  display: none;
+  position: absolute;
+  top: 50px;
+  left:0px;
+}
+.con dt{
+  font-size: 30px;
+  line-height: 180%;
+  font-weight: 500;
+}
+.con dd{
+  width: 540px;
+  line-height: 180%;
+  font-size: 15px;
+  color: #777;
+}
+.con dd small{
+  font-size: 12px;
+  margin-top: 50px;
+}
+.con img{
+  width: 540px;
+}
+.con3_add{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+.con3_add span{
+  display: block;
+  width: 125px;
+  text-align: center;
+  line-height: 100%;
+}
+.con1{display: block;}
+
+/* 4. 제품소개 */
+#product{
+  background: #ffc845;
+  padding: 100px 0px;
+}
+#product > article{
+  width: 1200px;
+  margin: 0 auto;
+}
+#product > article > h3{
+  font-size: 45px;
+  font-weight: 500;
+  padding: 10px 0px;
+}
+#product > article > ul{
+  display: flex;
+  justify-content: space-between;
+}
+#product > article > ul > li{
+  width: 31%;
+  margin: 15px;
+}
+#product > article > ul > li > img{
+  display: block;
+  margin:0 auto;
+}
+#product > article > ul > li > h4{
+  font-size: 27px;
+  border-bottom: 1px solid rgb(241, 176, 23);
+  height: 60px;
+  padding: 10px 0px;
+  font-weight: 500;
+}
+#product > article > ul > li > p{
+  padding: 10px 0px;
+  color: #986c02;
+  line-height: 2em;
+  letter-spacing: -0.5px;
+  font-size: 15px;
+  font-weight: 500;
+}
+/* 5. 이벤트 슬라이드 */
+#event{
+  padding: 100px 0px;
+  width: 1200px; margin:0 auto;
+  position: relative;
+}
+#event h3{
+  font-size: 45px; padding: 20px 0px;
+  font-weight: 500;
+}
+.e_slide{
+  overflow: hidden;
+}
+.es_wrap{display: flex; width: 3600px;}
+.es_wrap > div{width: 1200px;}
+.es_wrap > div > a{display: flex;}
+.es_wrap > div > a:hover{text-decoration: none;}
+.es_wrap > div > a > img{
+  border-radius: 10px;
+  border: 5px double #eee;
+}
+
+.e_txt{
+  padding: 30px 0px 0px 40px;
+}
+.e_txt span{
+  background: #e4e4e4;
+  color: #333;
+}
+.e_txt .e_act{
+  background: var(--main_color);
+  color: var(--txt_color1)
+}
+.e_txt h4{font-size: 18px; line-height: 60px;}
+.e_txt p{font-size: 16px; color:#777;}
+
+#event i{
+  position: absolute;
+  top: 290px;
+  font-size: 32px;
+  padding: 5px 12px;
+  border-radius: 50%;
+  border:1px solid #333;
+  color: rgb(61, 61, 61);
+  cursor: pointer;
+  transition: 0.5s;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+#event i:hover{
+  color: #fff;
+}
+#event .fa-angle-left{left:-55px;}
+#event .fa-angle-right{right:-55px;}
+
+/* 6. 미에로화이바 갤러리 */
+#gallery{
+  position: relative;
+  background: var(--main_color) !important;
+  margin: 0 auto;
+  padding:20px 0px;
+}
+main > #gallery > h3{
+  color: var(--txt_color1);
+  font-size: 45px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  color: #fff;
+  padding: 30px 0px 20px 0px;
+  font-size: 40px;
+}
+.grid_gallery, #gallery > h3{
+  width: 1200px;
+  margin: 0px auto;
+}
+
+/* grid gallery */
+.grid_gallery{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, 270px);
+  grid-template-areas: 
+  "g01 g02 g03"
+  "g04 g02 g05"
+  "g06 g07 g08";
+}
+.grid_gallery > figure:first-child{
+  grid-area: g01;
+}
+.grid_gallery > figure:nth-child(2){
+  grid-area: g02;
+}
+.grid_gallery > figure:nth-child(3){
+  grid-area: g03;
+}
+.grid_gallery > figure:nth-child(4){
+  grid-area: g04;
+}
+.grid_gallery > figure:nth-child(5){
+  grid-area: g05;
+}
+.grid_gallery > figure:nth-child(6){
+  grid-area: g06;
+}
+.grid_gallery > figure:nth-child(7){
+  grid-area: g07;
+}
+.grid_gallery > figure:last-child{
+  grid-area: g08;
+}
+
+.grid_gallery img{width:100%;}
+.grid_gallery > figure {
+  overflow: hidden;
+  position: relative;
+}
+.grid_gallery > figure:hover figcaption{
+  bottom: 0px;
+}
+.grid_gallery > figure > figcaption{
+  background-color: rgba(0,0,0,0.8);
+  height: 80px;
+  position: absolute; bottom:-80px;
+  width: 100%;
+  transition: 0.5s;
+}
+figcaption h4{
+  color: #f37022;
+  font-size: 20px;
+  padding: 10px 0px 5px 20px;
+}
+figcaption p{
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 0px 0px 20px;
+}
+figcaption span{
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px;
+  float:right;
+  transform: translate(-10px, -14px);
+}

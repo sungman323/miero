@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+.title_back{
+  background: url(http://man323.dothome.co.kr/250311/images/sub_bg1.jpg);
+  background-position: 0px -240px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lnb{
+  height: 50px;
+  background: var(--bg_color_gray);
+}
+.con article{
+  width: 1200px;
+  margin: 0 auto;
+}
+.con h2{display: none;}
+.lnb > ul{
+  width: 1200px;
+  margin:0 auto;
+  display: flex;
+  justify-content: center;
+}
+.lnb > ul > li{
+  line-height: 50px;
+  padding-left: 18px;
+}
+.lnb > ul > li:first-child a{
+  color:var(--main_color);
+}
+.lnb > ul > li::after{
+  padding-right: 18px;  
+  border-right: 1px solid #333;
+  content:"";
+}
+.lnb > ul > li:last-child::after{
+  border-right: none;
+  content:"";
+}
